@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- set the apple mobile web app capable -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- set the HandheldFriendly -->
+	<meta name="HandheldFriendly" content="True">
+	<!-- set the apple mobile web app status bar style -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!-- set the description -->
+	<meta name="description" content="Be - Startup Business HTML Template">
+	<meta name="keywords"
+		content="agency, Startup, bootstrap, business, corporate, creative, minimal, modern, onepage, personal, portfolio,  html5, responsive">
+	<meta name="author" content="Be - Startup Business HTML Template">
+	<!-- Page Title -->
+	<title>ExpressRegisterinUSA </title>
+	<!-- include the site stylesheet -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CWork+Sans:300,400,500,600" rel="stylesheet">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="css/fonts-icons.css">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="css/plugin-resets.css">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="style.css">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="css/color.css">
+</head>
+
+<body>
+	<style>
+		h1 {
+			color: #333;
+		}
+
+		.general-questions {
+			margin-bottom: 20px;
+		}
+
+		.general-questions h2 {
+			color: #333;
+			font-size: 24px;
+		}
+
+		.general-questions span {
+			background-color: #2ecc71;
+			color: white;
+			padding: 2px 10px;
+			border-radius: 5px;
+		}
+
+		.faq-item {
+			margin-bottom: 10px;
+		}
+
+		.faq-question {
+			background-color: #f8f8f8;
+			padding: 10px;
+			cursor: pointer;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			position: relative;
+		}
+
+		.faq-question::after {
+			content: '\25BC';
+			position: absolute;
+			right: 15px;
+			transition: transform 0.3s ease;
+		}
+
+		.faq-question.active::after {
+			transform: rotate(180deg);
+		}
+
+		.faq-answer {
+			display: none;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-top: none;
+			border-radius: 0 0 5px 5px;
+		}
+	</style>
+	<style>
+		.bg-grey {
+			background-color: #f8f9fa;
+			/* Light grey background */
+		}
+
+		.pad-top-lg {
+			padding-top: 50px;
+		}
+
+		.pad-bottom-lg {
+			padding-bottom: 50px;
+		}
+
+		.pad-top-xs {
+			padding-top: 10px;
+		}
+
+		.mar-bottom-lg {
+			margin-bottom: 30px;
+		}
+
+		.mar-bottom-xs {
+			margin-bottom: 10px;
+		}
+
+		.form-container {
+			width: 500px;
+			height: 600px;
+			background-color: #fff;
+			border-radius: 8px;
+			padding: 20px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			margin: 0 auto;
+			/* Center the form horizontally */
+		}
+
+		.form-group {
+			margin-bottom: 15px;
+		}
+
+		.form-control {
+			width: 100%;
+			padding: 10px;
+			border-radius: 4px;
+			border: 1px solid #ddd;
+			box-sizing: border-box;
+		}
+
+		.btn-primary {
+			background-color: #007bff;
+			border: none;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 4px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		.btn-primary:hover {
+			background-color: #0056b3;
+		}
+
+		@media (max-width: 767px) {
+			.form-container {
+				width: 100%;
+				height: auto;
+			}
+		}
+	</style>
+	<style>
+		.btn {
+			display: inline-block;
+			padding: 10px 20px;
+			text-decoration: none;
+			border-radius: 5px;
+			font-weight: bold;
+		}
+
+		.btn-green {
+			background-color: #2ecc71;
+			color: white;
+		}
+
+		.modal {
+			display: none;
+			position: fixed;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.4);
+		}
+
+		.modal-content {
+			background-color: white;
+			margin: 15% auto;
+			padding: 20px;
+			border-radius: 8px;
+			width: 500px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		}
+
+		.close {
+			color: #aaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+
+		h1 {
+			color: #2c3e50;
+			text-align: center;
+			margin-bottom: 1rem;
+		}
+
+		p {
+			text-align: center;
+			color: #7f8c8d;
+			margin-bottom: 1rem;
+		}
+
+		input {
+			width: 100%;
+			padding: 0.5rem;
+			margin-bottom: 1rem;
+			border: 1px solid black;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		button[type="Submit"] {
+			width: 50%;
+			padding: 0.5rem;
+			background-color: #f39c12;
+			color: black;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+			font-size: 2rem;
+		}
+
+		button[type="submit"]:hover {
+			background-color: #e67e22;
+		}
+
+		@media (max-width: 768px) {
+			.modal-content {
+				width: 90%;
+				margin: 10% auto;
+			}
+
+			h1 {
+				font-size: 1.3rem;
+			}
+
+			p {
+				font-size: 1rem;
+			}
+
+			button[type="submit"] {
+				font-size: 1rem;
+			}
+		}
+	</style>
+	<!-- start of main page wrapper -->
+	<div id="wrapper">
+		<!-- start of preloader -->
+		<div class="loader-container" id="loader">
+			<div class="spinner spinner-round"></div>
+		</div><!-- end of preloader -->
+		<div class="w1">
+			<!-- start of page header -->
+			<header id="header" class="nospace">
+				<!-- header holder -->
+				<div class="header-holder">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- Page logo -->
+								<div class="logo pull-left"><a href="home.html">Express</a></div>
+								<div class="holder pull-right">
+									<a href="#" class="pe-7s-menu menu-opener opener pull-right visible-xs"></a>
+									<div class="cart-holder pull-right">
+
+										<div class="drop-sub">
+											<!-- side widget start here -->
+											<div class="side-widget">
+												<!-- cart row start here -->
+												<div class="cart-row">
+													<a href="#" class="img"><img src="http://placehold.it/50x50"
+															alt="image" class="img-responsive"></a>
+													<div class="mt-h">
+														<span class="mt-h-title"><a href="#">Classic Handbag</a></span>
+														<span class="price">1 × $48.00</span>
+													</div>
+													<a href="#" class="close pe-7s-close"></a>
+												</div><!-- cart row end here -->
+												<!-- cart row start here -->
+												<div class="cart-row">
+													<a href="#" class="img"><img src="http://placehold.it/50x50"
+															alt="image" class="img-responsive"></a>
+													<div class="mt-h">
+														<span class="mt-h-title"><a href="#">Stylish Hat</a></span>
+														<span class="price">2 × $18.00</span>
+													</div>
+													<a href="#" class="close pe-7s-close"></a>
+												</div><!-- cart row end here -->
+												<!-- cart row start here -->
+												<div class="cart-row">
+													<a href="#" class="img"><img src="http://placehold.it/50x50"
+															alt="image" class="img-responsive"></a>
+													<div class="mt-h">
+														<span class="mt-h-title"><a href="#">Modern Shoes</a></span>
+														<span class="price">1 × $50.00</span>
+													</div>
+													<a href="#" class="close pe-7s-close"></a>
+												</div><!-- cart row end here -->
+												<!-- cart row total start here -->
+												<div class="cart-row-total">
+													<span class="mt-total pull-left">SubTotal</span>
+													<span class="mt-total-txt pull-right">$ 134.00</span>
+												</div>
+												<!-- cart row total end here -->
+												<div class="cart-btn-row">
+													<a href="#" class="btn-add btn">VIEW CART</a>
+													<a href="#" class="btn-full btn">CHECKOUT</a>
+												</div>
+											</div><!-- mt side widget end here -->
+										</div>
+									</div>
+
+									<!-- start of page navigation -->
+									<nav id="nav" class="text-uppercase">
+										<ul class="list-inline">
+											<li>
+												<a href="home.html">Home</a>
+
+											</li>
+											<li>
+												<a href="about.html">About Us</a>
+
+											</li>
+											<li>
+												<a class="drop-link" href="#">Service</a>
+												<div class="drop" style="width: 60vw; ">
+													<div class="row "
+														style="background-color: #282828; position: relative; display: flex; flex-wrap: wrap;">
+														<div class="col-md-4">
+															<ul class="list-unstyled">
+																<li><a
+																		href="BusinessFormation.html">BusinessFormation</a>
+																</li>
+																<li><a href="ITINApplication.html">ITIN Application</a>
+																</li>
+																<li><a href="DBA.html">Doing Business As DBA</a></li>
+																<li><a href="EIN-Services.html">EIN-Services</a></li>
+															</ul>
+														</div>
+														<div class="col-md-4">
+															<ul class="list-unstyled">
+																<li><a href="Annual-Compliance-Filing.html">Annual
+																		Compliance Filing</a></li>
+																<li><a href="Merchant-Account.html">Merchant Account</a>
+																</li>
+																<li><a href="Compliance-Guarantee.html">Compliance
+																		Guarantee</a></li>
+																<li><a href="physical-bank-account.html">Physical Bank
+																		Account</a></li>
+															</ul>
+														</div>
+														<div class="col-md-4">
+															<ul class="list-unstyled">
+																<li><a href="Change-of-Registered-Agent.html">Change of
+																		Registered Agent</a></li>
+																<li><a href="Registered-Agent.html">Registered Agent</a>
+																</li>
+																<li><a href="Book-keeping.html">Book keeping</a></li>
+																<li><a href="US-Bank-Account.html">US Bank Account</a>
+																</li>
+																<li><a href="Tax-Filing.html">Tax Filing</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</li>
+
+											<li>
+												<a href="contact.html">Contact</a>
+
+											</li>
+											<li>
+												<a href="FAQ.html">FAQ's</a>
+
+											</li>
+										</ul>
+									</nav><!-- end of page navigation -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header><!-- end of page header -->
+			<!-- start of search-popup -->
+			<div class="search-popup">
+				<div class="holder">
+					<a href="#" class="search-close"><span></span><span></span></a>
+					<div class="frame">
+						<form action="#">
+							<fieldset>
+								<input placeholder="Search here..." type="text">
+								<button class="pe-7s-search" type="submit"></button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div><!-- end of search-popup -->
+			<!-- start of page main section -->
+			<main id="main">
+				<!-- start of main banner -->
+				<section class="main-banner text-center">
+					<!-- slide -->
+					<div class="slide bg-img-full" style="background-image: url(images/img17.jpg);">
+						<span class="bg-overlay"></span>
+						<div class="caption">
+							<div class="holder">
+								<h1 class="heading add">A Startup <a
+										href="https://www.youtube.com/embed/ANwf8AE3_d0?autoplay=1"
+										class="play fa fa-play lightbox fancybox.iframe"></a> Using Be</h1>
+								<p>Start building your beautiful site with elegant comopnents to <br>convert your ideas
+									and create your startups.</p>
+							</div>
+						</div>
+					</div>
+					<a href="#" data-scroll-nav="1" class="btn-bottom pe-7s-angle-down"></a>
+				</section><!-- end of main banner -->
+
+				<!-- start of wedo section -->
+				<section class="bg-grey wedo-section">
+					<div class="container pad-top-lg pad-bottom-lg">
+						<div class="row">
+							<!-- Left side: "What we can do?" section -->
+							<div class="col-md-6 col-xs-12">
+								<header class="main-heading mar-bottom-lg">
+									<h6>Welcome To ExpressRegiserInUsa</h6>
+									<h2 class="heading mar-bottom-xs">Helping Indian Entrepreneurs To Launch Company in
+										<strong>USA</strong>
+									</h2>
+									<p><strong> ExpressRegisterInUsa</strong> is not a Random Filing Company. We give
+										that what other so called filing company can't do. we provide Physical Bank
+										account and Deliver your EIN number in Express Mode</p>
+								</header>
+								<div class="row">
+									<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
+										<span class="pe-7s-call main-color icon"></span>
+										<div class="holder">
+											<a href="tel:+917972538966"> <span class="heading">Call Now</span></a>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
+										<span class="pe-7s-monitor main-color icon"></span>
+										<div class="holder">
+											<a href="https://api.whatsapp.com/send?phone=917972538966&text=Hii"><span
+													class="heading">Whatsapp Now</span></a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<!-- Right side: Contact Form -->
+							<div class="col-md-6 col-xs-12">
+								<div class="form-container">
+									<h1>Contact Form</h1>
+									<form method="post" action="php/contact-from.php" id="contact-form">
+										<div class="form-group">
+											<label for="name">Name:</label>
+											<input type="text" id="name" name="name" required class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="phone">Phone Number:</label>
+											<input type="text" id="phone" name="phone" required class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="email">Email ID:</label>
+											<input type="email" id="email" name="email" required class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="description">Description:</label>
+											<textarea id="description" name="description" required
+												class="form-control"></textarea>
+										</div>
+										<div class="form-group">
+											<button type="submit" class="btn btn-primary"
+												style="background-color: #2ecc71;">Submit</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- start of page main section -->
+				<main id="main" class="bg-grey">
+
+					<div class="container pad-top-xs">
+						<div class="row mar-bottom-md">
+							<div class="col-xs-12 col-sm-4 mar-bottom-xs">
+								<!-- start of info-box -->
+								<div class="info-box text-center">
+									<span class="pe-7s-target main-color icon"></span>
+									<span class="heading">
+										IRS Certified Agent</span>
+								</div><!-- end of info-box -->
+							</div>
+							<div class="col-xs-12 col-sm-4 mar-bottom-xs">
+								<!-- start of info-box -->
+								<div class="info-box text-center">
+									<span class="pe-7s-phone main-color icon"></span>
+									<span class="heading">
+										100% Refund Policy</span>
+								</div><!-- end of info-box -->
+							</div>
+							<div class="col-xs-12 col-sm-4 mar-bottom-xs">
+								<!-- start of info-box -->
+								<div class="info-box text-center">
+									<span class="pe-7s-rocket main-color icon"></span>
+									<span class="heading">
+										Express Delivery</span>
+								</div><!-- end of info-box -->
+							</div>
+						</div>
+						<div class="border-top"></div>
+					</div>
+				</main><!-- end of page main section -->
+
+				<section class="bg-grey wedo-section add">
+					<div class="container pad-top-lg pad-bottom-lg">
+						<div class="row pad-top-md pad-bottom-md">
+							<div class="col-md-5 col-xs-12">
+								<!-- start of main-heading -->
+								<header class="main-heading mar-bottom-xs">
+									<h2><strong>What is Our USP? </strong><br>We guarantee to deliver</h2>
+									<h3 class="heading">Ein (Employer Identification Number)
+										within 24-48 Hours</h3>
+									<h4>If We Failed to Deliver You the Ein Number within 24-48 Hours.</h4>
+								</header><!-- end of main-heading -->
+								<ul>
+									<li>
+										<h4>Your Entire Money Will Be Refunded</h4>
+									</li>
+									<li>
+										<h4>Get Your Ein Number 1st and Then Pay Us*</h4>
+									</li>
+								</ul>
+								<br>
+								<div class="row">
+									<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
+										<span class="pe-7s-call main-color icon"></span>
+										<div class="holder">
+											<a href="tel:+917972538966"> <span class="heading">Call Now</span></a>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
+										<span class="pe-7s-monitor main-color icon"></span>
+										<div class="holder">
+											<a href="https://api.whatsapp.com/send?phone=917972538966&text=Hii"><span
+													class="heading">Whatsapp Now</span></a>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="img-box bg-img-full" style="background-image: url(images/img-1.png);"></div>
+				</section><!-- end of wedo section -->
+
+
+				<section class="bg-grey wedo-section add">
+					<div class="pad-top-lg hidden-sm"></div>
+					<div class="pad-top-md hidden-sm"></div>
+					<div class="container">
+						<div class="row pad-bottom-xs">
+							<div class="col-md-6 col-xs-12 col-md-push-7">
+								<header class="main-heading mar-bottom-lg">
+									<h4>About us</h4>
+									<h2 class="heading mar-bottom-xs">We Are The Best Filing Company in Town</h2>
+									<p><strong> ExpressRegisterInUsa</strong> helps you file your U.S. company, EIN, and
+										Physical bank account so you can focus on what you do best: your business.</p>
+								</header>
+								<div class="row">
+									<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
+										<span class="pe-7s-browser main-color icon"></span>
+										<div class="holder">
+											<span class="title">File U.S. Tax Returns</span>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
+										<span class="pe-7s-photo-gallery main-color icon"></span>
+										<div class="holder">
+											<span class="title">Obtain EIN or ITIN</span>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
+										<span class="pe-7s-graph1 main-color icon"></span>
+										<div class="holder">
+											<span class="title">Form U.S. Company</span>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
+										<span class="pe-7s-phone main-color icon"></span>
+										<div class="holder">
+											<span class="title">Open Merchant Account</span>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
+										<span class="pe-7s-graph main-color icon"></span>
+										<div class="holder">
+											<span class="title">Book keeping</span>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
+										<span class="pe-7s-target main-color icon"></span>
+										<div class="holder">
+											<span class="title">Tax Filing</span>
+										</div>
+									</div>
+
+									<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
+
+										<div class="holder">
+											<a class="btn btn-green" href="tel:+917972538966"> <span
+													class="heading">Call Now</span></a>
+
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
+										<div class="holder">
+											<a class="btn btn-green"
+												href="https://api.whatsapp.com/send?phone=917972538966&text=Hii"><span
+													class="heading">Whatsapp Now</span></a>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+
+						</div>
+					</div>
+					<div class="pad-top-lg hidden-sm"></div>
+					<div class="img-box bg-img-full right" style="background-image: url(images/man-standing.jpg);">
+					</div>
+				</section>
+
+
+				<main id="main">
+
+					<div class="container pad-top-lg">
+						<!-- start of main-heading -->
+						<header class="main-heading text-center row mar-bottom-sm">
+							<div class="col-xs-12">
+								<h4>Services</h4>
+								<h2 class="heading">What <strong>Service</strong> We Offer</h2>
+								<p>Form a US company and get a US bank account, EIN, business address, and access to the
+									best payment apps (including Stripe & PayPal). All in the click of a button, 100%
+									remotely.</p>
+							</div>
+						</header><!-- end of main-heading -->
+						<div class="container">
+							<div class="border-top pad-top-lg"></div>
+							<div class="row mar-bottom-sm">
+								<!-- start of icon-box -->
+								<div class="col-xs-12 col-sm-4 mar-bottom-xs icon-box">
+									<span class="pe-7s-helm  main-color icon"></span>
+									<div class="holder">
+										<span class="title">Business Formation</span>
+										<p>We are assure of any ambitious entrepreneur can navigate through these
+											processes with ease!</p>
+										<a href="">read more</a>
+									</div>
+								</div><!-- end of icon-box -->
+								<!-- start of icon-box -->
+								<div class="col-xs-12 col-sm-4 mar-bottom-xs icon-box">
+									<span class="pe-7s-vector main-color icon"></span>
+									<div class="holder">
+										<span class="title">EIN Service</span>
+										<p>we will make certain that your organization qualifies for tax-exempt status.
+											for which you will get EIN Number</p>
+										<a href="">read more</a>
+									</div>
+								</div><!-- end of icon-box -->
+								<!-- start of icon-box -->
+								<div class="col-xs-12 col-sm-4 mar-bottom-xs icon-box">
+									<span class="pe-7s-graph main-color icon"></span>
+									<div class="holder">
+										<span class="title">Registered Agent</span>
+										<p>An agent who can respond to subpoenas and litigation. The registered
+											representative fulfills this role in accordance with state statutes
+										</p>
+										<a href="">read more</a>
+									</div>
+								</div><!-- end of icon-box -->
+								<!-- start of icon-box -->
+								<div class="col-xs-12 col-sm-4 mar-bottom-xs icon-box">
+									<span class="pe-7s-rocket main-color icon"></span>
+									<div class="holder">
+										<span class="title">U.S. Physical Bank</span>
+										<p>Bank account is a component of success. It is essential for one to make the
+											most judicious selection for banks.</p>
+										<a href="">read more</a>
+									</div>
+								</div><!-- end of icon-box -->
+								<!-- start of icon-box -->
+								<div class="col-xs-12 col-sm-4 mar-bottom-xs icon-box">
+									<span class="pe-7s-phone main-color icon"></span>
+									<div class="holder">
+										<span class="title">ITIN Application</span>
+										<p>IRS issues ITINs, to enable people to faithfully comply with U.S. tax
+											regulations. We do it for you with our Express Method</p>
+										<a href="">read more</a>
+									</div>
+								</div><!-- end of icon-box -->
+								<!-- start of icon-box -->
+								<div class="col-xs-12 col-sm-4 mar-bottom-xs icon-box">
+									<span class="pe-7s-edit main-color icon"></span>
+									<div class="holder">
+										<span class="title">Merchant account</span>
+										<p>Merchant services allow businesses to accept credit and debit card payments
+											at a point-of-sale (POS) system, online, or through invoices.</p>
+										<a href="">read more</a>
+									</div>
+								</div><!-- end of icon-box -->
+								<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
+
+									<div class="holder">
+										<a class="btn btn-green" href="tel:+917972538966"> <span class="heading">Call
+												Now</span></a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
+									<div class="holder">
+										<a class="btn btn-green"
+											href="https://api.whatsapp.com/send?phone=917972538966&text=Hii"><span
+												class="heading">Whatsapp Now</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+		</div>
+
+		<div class="main-bg-color text-center promo-box">
+			<div class="container pad-top-md pad-bottom-md">
+				<div class="row">
+					<div class="col-xs-12">
+						<span class="txt">Get <strong>Counselling</strong> Now</span>
+						<a class="btn btn-green" href="tel:+917972538966" style="background-color: #282828;"> <span
+								class="heading">Call
+								Now</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a class="btn btn-green" href="https://api.whatsapp.com/send?phone=917972538966&text=Hii"
+							style="background-color: #282828;"><span class="heading">Whatsapp Now</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+		<div class="container" style="max-width: 800px;
+		margin: 0 auto;
+		background-color: white;
+		padding: 20px;
+		border-radius: 5px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		margin-top: 40px;
+		margin-bottom: 40px">
+
+			<h1>FAQ's</h1>
+			<div class="general-questions">
+				<h2>General <span>Questions</span></h2>
+				<h4>Find Answers to Frequently Asked Questions.</h4>
+			</div>
+			<div class="faq-list">
+				<div class="faq-item">
+					<div class="faq-question">Can I get a US Bank Account without going to the US?</div>
+					<div class="faq-answer">Answer to this question goes here.</div>
+				</div>
+				<div class="faq-item">
+					<div class="faq-question">Can I get Stripe & PayPal for my US company?</div>
+					<div class="faq-answer">Answer to this question goes here.</div>
+				</div>
+				<div class="faq-item">
+					<div class="faq-question">What do I need to get started?</div>
+					<div class="faq-answer">To get started, simply fill out our online form, submit your payment, upload
+						your documentation and we'll handle the rest.</div>
+				</div>
+				<div class="faq-item">
+					<div class="faq-question">What is the difference between using you and an expensive lawyer?</div>
+					<div class="faq-answer">Answer to this question goes here.</div>
+				</div>
+			</div>
+			<div class="general-questions">
+				<a href="FAQ.html">
+					<h2><span>All FAQ's</span></h2>
+				</a>
+			</div>
+		</div>
+
+
+
+
+
+		<div class="bg-grey pad-top-lg pad-bottom-md" id="price01">
+			<div class="container">
+				<!-- start of main-heading -->
+				<header class="main-heading text-center row">
+					<div class="col-xs-12">
+						<p>Our Pricing</p>
+						<h2 class="heading">The Best <strong>Price</strong> For You</h2>
+						<p>We make registering a company as easy as possible, so you can focus on the important things.
+							Our mission is to provide you with a superior and modern experience at an unparalleled
+							value.</p>
+
+					</div>
+				</header><!-- end of main-heading -->
+				<div class="row pad-top-md text-center">
+					<div class="col-xs-12">
+						<!-- start of price-box -->
+						<div class="price-box mar-bottom-xs">
+
+							<span class="title text-uppercase" style="font-size: 25px;color: #2ecc71;">Starter</span>
+							<span class="price" style="font-size: 37px;">₹&nbsp;18,399 <sup>+GST</sup></span>
+							<!-- <span class="dur">per month</span> -->
+							<ul class="list-unstyled">
+								<li><span class="pe-7s-check" style="text-align: justify;"></span>&nbsp;Name
+									Availability Search</li>
+								<li><span class="pe-7s-check" style="text-align:left;"></span>&nbsp;&nbsp;Prepare & File
+									LLC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+								<li><span class="pe-7s-check"></span>&nbsp;&nbsp;Same Day Email Support</li>
+								<li><span class="pe-7s-check"></span>&nbsp;&nbsp;Registered
+									Agent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</li>
+								<li><span class="pe-7s-check"></span>&nbsp;&nbsp;Chat
+									Support&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</li>
+								<li><span class="pe-7s-check"></span></li>
+								<li><span class="pe-7s-check"></span></li>
+								<li><span class="pe-7s-check"></span></li>
+								<li><span class="pe-7s-check"></span></li>
+								<li><span class="pe-7s-check"></span></li>
+								<li><span class="pe-7s-check"></span></li>
+								<li><span class="pe-7s-check"></span></li>
+								<li>&nbsp;&nbsp;</li>
+							</ul>
+							<a href="#" class="btn btn-green add" id="getStarted">Get Started</a>
+							<!-- Start of modal -->
+							<div id="formModal" class="modal">
+								<div class="modal-content">
+									<span class="close">&times;</span>
+									<h1 style="size: 20px;"> <strong>LAUNCH YOUR COMPANY</strong></h1>
+									<p>Fill out the form below, and we will be in touch shortly.</p>
+									<form id="launchForm">
+										<input type="text" placeholder="Full Name*" required>
+										<input type="tel" placeholder="Phone*" required>
+										<input type="email" placeholder="Email*" required>
+										<button type="submit">SUBMIT →</button>
+									</form>
+								</div>
+							</div>
+							<!-- End of modal -->
+						</div><!-- end of price-box -->
+						<!-- start of price-box -->
+						<div class="price-box mar-bottom-xs active">
+							<span class="title text-uppercase" style="font-size: 25px;">Express</span>
+							<span class="price" style="font-size: 37px;">₹&nbsp;24,399 <sup>+GST</sup></span>
+							<!-- <span class="dur">per month</span> -->
+							<ul class="list-unstyled">
+								<li><span class="pe-7s-check" style="text-align: justify;"></span>&nbsp;Name
+									Availability Search</li>
+								<li><span class="pe-7s-check" style="text-align:left;"></span>&nbsp;&nbsp;Prepare & File
+									LLC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+								<li><span class="pe-7s-check"></span>&nbsp;&nbsp;Same Day Email Support</li>
+								<li><span class="pe-7s-check"></span>&nbsp;&nbsp;Registered
+									Agent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</li>
+								<li><span class="pe-7s-check"></span>&nbsp;&nbsp;Chat
+									Support&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</li>
+								<li><span class="pe-7s-check"></span>&nbsp;&nbsp;Operating
+									Agreement&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+								<li><span class="pe-7s-check"></span>&nbsp;&nbsp;Register Agent address&nbsp;&nbsp;</li>
+								<li><span class="pe-7s-check"></span>&nbsp;&nbsp;EIN
+									number&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</li>
+								<li><span class="pe-7s-check"></span>&nbsp;Statement of organizer&nbsp;&nbsp;&nbsp;</li>
+								<li><span class="pe-7s-check"></span>&nbsp;&nbsp;Rush
+									Filing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</li>
+								<li><span class="pe-7s-check"></span>&nbsp;&nbsp;Bank
+									Account&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</li>
+								<li><span class="pe-7s-check"></span></li>
+
+							</ul>
+							<a href="#" class="btn btn-green add" id="getStarted">Get Started</a>
+						</div><!-- end of price-box -->
+
+						<!-- start of price-box -->
+						<div class="price-box mar-bottom-xs">
+							<span class="title text-uppercase" style="font-size: 25px;color: #2ecc71;">Premium</span>
+							<span class="price" style="font-size: 37px;">₹&nbsp;30,999<sup>+GST</sup></span>
+							<!-- <span class="dur">per month</span> -->
+							<ul class="list-unstyled">
+								<li><span class="pe-7s-check" style="text-align: justify;"></span>&nbsp;Name
+									Availability Search</li>
+								<li><span class="pe-7s-check" style="text-align:left;"></span>&nbsp;&nbsp;Prepare & File
+									LLC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+								<li><span class="pe-7s-check"></span>&nbsp;&nbsp;Same Day Email Support</li>
+								<li><span class="pe-7s-check"></span>&nbsp;&nbsp;Registered
+									Agent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</li>
+								<li><span class="pe-7s-check"></span>&nbsp;&nbsp;Chat
+									Support&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</li>
+								<li><span class="pe-7s-check"></span>&nbsp;&nbsp;Operating
+									Agreement&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+								<li><span class="pe-7s-check"></span>&nbsp;&nbsp;Register Agent address&nbsp;&nbsp;</li>
+								<li><span class="pe-7s-check"></span>&nbsp;&nbsp;EIN
+									number&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</li>
+								<li><span class="pe-7s-check"></span>&nbsp;Statement of organizer&nbsp;&nbsp;&nbsp;</li>
+								<li><span class="pe-7s-check"></span>&nbsp;&nbsp;Rush
+									Filing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</li>
+								<li><span class="pe-7s-check"></span>&nbsp;&nbsp;Bank
+									Account&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</li>
+								<li><span class="pe-7s-check"></span>&nbsp;&nbsp;Merchant
+									Account&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+								<li><span class="pe-7s-check"></span>&nbsp;&nbsp;Debit
+									Card&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</li>
+							</ul>
+							<a href="#" class="btn btn-green add" id="getStarted">Get Started</a>
+						</div><!-- end of price-box -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bg-img-full bg-img-parallax t-section pad-top-lg pad-bottom-lg" style="background-color: white">
+			<span class="bg-overlay"></span>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-10 col-lg-8 col-md-push-1 col-lg-push-2">
+						<h4 style="text-align: center;">Testimonials</h4>
+						<h2 class="heading text-center">What Our Clients Saying</h2>
+						<!-- t-slider -->
+						<div class="t-slider">
+							<!-- slide -->
+							<div class="slide text-center">
+								<blockquote>
+									<q>one of my best decision i took expressregister is not like other company it is
+										completely a expressmode. they have the best team i worked with.</q>
+									<cite>Michael Doe</cite>
+								</blockquote>
+							</div>
+							<!-- slide -->
+							<div class="slide text-center">
+								<blockquote>
+									<q>it's express mode EIN number delivery I taught i need to wait for months for EIN
+										numbers but it was not fact i got my EIN number within few days without any
+										delay like others.</q>
+									<cite>Adam Martin</cite>
+								</blockquote>
+							</div>
+							<!-- slide -->
+							<div class="slide text-center">
+								<blockquote>
+									<q>We are so excited to launch our new company, By using Be it has a great features,
+										I think you are all about to make me happy.</q>
+									<cite>Martin Martin</cite>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container pad-top-lg pad-bottom-lg" id="blog01">
+			<!-- start of main-heading -->
+			<header class="main-heading text-center row">
+				<div class="col-xs-12">
+					<h2 class="heading">Latest Blog & Articles</h2>
+					<!-- <p>When you create your startup the only way to win <br>is to race ahead not to stop and fight.</p> -->
+				</div>
+			</header><!-- end of main-heading -->
+			<div class="row pad-top-md mar-bottom-sm">
+				<div class="col-xs-12 col-sm-4 mar-bottom-xs">
+					<!-- start of post -->
+					<div class="post">
+						<a href="blog-detail.html"><img src="images/RegistedAgentinLLC.jpg" alt="image"
+								class="img-responsive"></a>
+						<div class="box bg-grey">
+							<h3 class="heading"><a href="blog-detail.html">What is Registered Agent in LLC</a></h3>
+							<!-- <span class="meta">Web design &nbsp;/&nbsp; 26 Jan, 2017</span> -->
+							<p>Registered agent services are a great way to get help with important business tasks....
+								<br><br>
+							</p>
+							<a href="blog-detail.html" class="more">More <i class="fa fa-angle-double-right"
+									aria-hidden="true"></i></a>
+						</div>
+					</div><!-- end of post -->
+				</div>
+				<div class="col-xs-12 col-sm-4 mar-bottom-xs">
+					<!-- start of post -->
+					<div class="post">
+						<a href="blog-detail.html"><img src="images/Indian-can-Register-Company.jpg" alt="image"
+								class="img-responsive"></a>
+						<div class="box bg-grey">
+							<h3 class="heading"><a href="blog-detail.html">Can an indian Register a company in USA?</a>
+							</h3>
+							<!-- <span class="meta">UX &nbsp;/&nbsp; 14 Feb, 2017</span> -->
+							<p>Yes, an Indian can register a company in the United States. The process is
+								straightforward ...</p>
+							<a href="blog-detail.html" class="more">More <i class="fa fa-angle-double-right"
+									aria-hidden="true"></i></a>
+						</div>
+					</div><!-- end of post -->
+				</div>
+				<div class="col-xs-12 col-sm-4 mar-bottom-xs">
+					<!-- start of post -->
+					<div class="post">
+						<a href="blog-detail.html"><img src="images/EIN.jpg" alt="image" class="img-responsive"></a>
+						<div class="box bg-grey">
+							<h3 class="heading"><a href="blog-detail.html">What is a EIN Number used for?</a></h3>
+							<span class="meta">Digital &nbsp;/&nbsp; 12 Mar, 2017</span>
+							<p>An Ein Number can be used for a variety of purposes, such as filing taxes and applying
+								for financial services...</p>
+							<a href="blog-detail.html" class="more">More <i class="fa fa-angle-double-right"
+									aria-hidden="true"></i></a>
+						</div>
+					</div><!-- end of post -->
+				</div>
+			</div>
+
+		</div>
+
+
+		<main id="main" class="bg-grey">
+
+			<div class="container pad-top-xs">
+				<div class="border-top"></div>
+				<div class="row mar-bottom-md">
+					<div class="col-xs-12 pad-top-lg">
+						<!-- start of main-heading -->
+						<header class="main-heading text-center row">
+							<div class="col-xs-12">
+								<h2 class="heading">Get in Touch</h2>
+								<p>When you create your startup the only way to win <br>is to race ahead not to stop and
+									fight.</p>
+							</div>
+						</header><!-- end of main-heading -->
+					</div>
+				</div>
+				<div class="row mar-bottom-lg">
+					<div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+						<form method="post" action="php/get-touchForm.php" id="contact-form" data-toggle="validator">
+							<!-- start of contact-form -->
+							<div class="contact-form">
+								<div class="row">
+									<div class="col-xs-12">
+										<input type="text" class="form-control" placeholder="Your name*" id="name">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-6">
+										<input type="email" class="form-control" placeholder="Email address*"
+											id="email">
+									</div>
+									<div class="col-xs-12 col-sm-6">
+										<input type="text" class="form-control" placeholder="Phone number" id="phone">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12">
+										<textarea name="message" cols="30" rows="10" class="form-control"
+											placeholder="Your message*" id="message"></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12">
+										<div id="msgSubmit" class="form-message hidden"></div>
+										<button class="btn btn-full" type="submit" id="form-submit">Submit</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="row mar-bottom-md">
+					<div class="col-xs-12 col-sm-4 mar-bottom-xs">
+						<!-- start of info-box -->
+						<div class="info-box text-center">
+							<span class="pe-7s-call icon main-color"></span>
+
+							<a href="tel:+917972538966"> <span class="heading">Call Now</span></a>
+						</div><!-- end of info-box -->
+					</div>
+					<div class="col-xs-12 col-sm-4 mar-bottom-xs">
+						<!-- start of info-box -->
+						<div class="info-box text-center">
+							<span class="pe-7s-phone icon main-color"></span>
+							<a href="https://api.whatsapp.com/send?phone=917972538966&text=Hii"><span
+									class="heading">Whatsapp Now</span></a>
+
+						</div><!-- end of info-box -->
+					</div>
+					<div class="col-xs-12 col-sm-4 mar-bottom-xs">
+						<!-- start of info-box -->
+						<div class="info-box text-center" style="padding-bottom: 20px;">
+							<span class="pe-7s-monitor icon main-color"></span>
+							<a
+								href="mailto:expressregisterinusa@gmail.com?subject=Inquiry&body=Hello,%20I%20would%20like%20to%20know%20more%20about%20your%20services."><span
+									class="heading">Email</span></a>
+							<p>Email: expressregisterinusa@gmail.com</p>
+						</div><!-- end of info-box -->
+					</div>
+				</div>
+			</div>
+		</main>
+
+		</main><!-- end of page main section -->
+		<!-- start of page footer -->
+		<footer id="footer">
+			<div class="bg-dark2 pad-top-lg pad-bottom-xs">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-3 mar-bottom-xs">
+							<!-- logo -->
+							<div class="logo"><a href="#">Express Register</a></div>
+							<!-- social -->
+							<ul class="list-inline social pad-top-xs">
+								<li><a href="#">
+										<p style="text-align: left;">Contact: expressregisterinusa@gmail.com</p>
+									</a></li>
+								<li><a href="#">
+										<p style="text-align: left;">Registered Office Address: 4329 Dark Star Ln, Dallas, TX 75211</p>
+									</a></li>
+
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-3 mar-bottom-xs" style="left: 44px;">
+							<span class="title text-uppercase ">Qucik Search</span>
+							<ul class="list-unstyled">
+								<li><a href="about.html">About Us</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a onclick="myFunction()">Pricing</a></li>
+								<li><a onclick="myBlog()">Blog</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+
+						<div class="col-xs-12 col-sm-3 mar-bottom-xs">
+							<span class="title text-uppercase">Useful Links</span>
+							<!-- start of twitter-feed -->
+							<ul class="list-unstyled">
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Terms and Conditions</a></li>
+								<li><a href="#">Our USP</a></li>
+								<li><a href="#">Return Policy</a></li>
+								<li><a href="FAQ.html">FAQ</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-3 mar-bottom-xs">
+							<span class="title text-uppercase">Work Hours</span>
+
+							<form action="#" class="email-form">
+								<label for="email-input">9 AM - 5 PM, Monday - Saturday</label>
+								<label for="email-input">We are always ready to help you</label>
+								<div class="holder">
+
+
+
+								</div>
+
+								<a href="#" class="btn btn-green add" id="getStarted" style="box-sizing: 50px;">Launch
+									my company</a>
+
+							</form><!-- end of email-form -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- start of f-bottom -->
+			<div class="bg-dark3 f-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<span class="pull-left">© ExpressRegisterinUSA 2016, All Rights Reserved.</span>
+							<span class="pull-right"><a href="#">Policy Privacy</a> &nbsp; &nbsp; &nbsp; &nbsp; <a
+									href="#">Terms &amp; Conditions</a></span>
+						</div>
+					</div>
+				</div>
+			</div><!-- end of f-bottom -->
+		</footer><!-- end of page footer -->
+	</div>
+	<!-- Back Top of the page -->
+	<span id="back-top" class="pe-7s-angle-up main-bg-color"></span>
+	</div><!-- end of main page wrapper -->
+
+	<script>
+		document.querySelectorAll('.faq-question').forEach(question => {
+			question.addEventListener('click', () => {
+				question.classList.toggle('active');
+				const answer = question.nextElementSibling;
+				if (answer.style.display === 'block') {
+					answer.style.display = 'none';
+				} else {
+					answer.style.display = 'block';
+				}
+			});
+		});
+	</script>
+	<script>
+		function myFunction() {
+			const element = document.getElementById("price01");
+			element.scrollIntoView();
+		}
+		function myBlog() {
+			const element = document.getElementById("blog01");
+			element.scrollIntoView();
+		}
+	</script>
+	<script>
+		const modal = document.getElementById("formModal");
+		const btns = document.querySelectorAll(".btn-green.add");
+		const span = document.getElementsByClassName("close")[0];
+		const form = document.getElementById("launchForm");
+
+		btns.forEach(btn => {
+			btn.onclick = function (e) {
+				e.preventDefault();
+				modal.style.display = "block";
+			}
+		});
+
+		span.onclick = function () {
+			modal.style.display = "none";
+		}
+
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+
+		form.onsubmit = function (e) {
+			e.preventDefault();
+			alert("Form submitted! We'll be in touch soon.");
+			modal.style.display = "none";
+		}
+	</script>
+	<script>
+		$(function () {
+
+			// Get the form.
+			var form = $('#contact-form');
+
+			// Get the messages div.
+			var formMessages = $('.form-messege');
+
+			// Set up an event listener for the contact form.
+			$(form).submit(function (e) {
+				// Stop the browser from submitting the form.
+				e.preventDefault();
+
+				// Serialize the form data.
+				var formData = $(form).serialize();
+
+				// Submit the form using AJAX.
+				$.ajax({
+					type: 'POST',
+					url: $(form).attr('action'),
+					data: formData
+				})
+					.done(function (response) {
+						// Make sure that the formMessages div has the 'success' class.
+						$(formMessages).removeClass('error');
+						$(formMessages).addClass('success');
+
+						// Set the message text.
+						$(formMessages).text(response);
+
+						// Clear the form.
+						$('#contact-form input,#contact-form textarea').val('');
+					})
+					.fail(function (data) {
+						// Make sure that the formMessages div has the 'error' class.
+						$(formMessages).removeClass('success');
+						$(formMessages).addClass('error');
+
+						// Set the message text.
+						if (data.responseText !== '') {
+							$(formMessages).text(data.responseText);
+						} else {
+							$(formMessages).text('Oops! An error occured and your message could not be sent.');
+						}
+					});
+			});
+
+		});
+	</script>
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/jquery.main.js"></script>
+</body>
+
+</html>
