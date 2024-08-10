@@ -31,12 +31,11 @@
 	<link rel="stylesheet" href="css/responsive.css">
 	<!-- include the site stylesheet -->
 	<link rel="stylesheet" href="css/color.css">
+	<link rel="stylesheet" href="form.css">
 </head>
 <body>
 	<style>
-		h1 {
-			color: #333;
-		}
+	
 
 		.general-questions {
 			margin-bottom: 20px;
@@ -385,7 +384,23 @@
 			</div>
 
 			<main id="main" class="bg-grey">
-				<div class="container pad-top-xs">
+
+				<div id="companyLaunchModal" class="custom-modal">
+					<div class="custom-modal-content">
+						<span class="custom-close">&times;</span>
+						<h1 style="font-size: 18px;"><strong>LAUNCH YOUR COMPANY</strong></h1>
+						<p>Fill out the form below, and we will be in touch shortly.</p>
+						<form id="companyLaunchForm contact-form" method="post" action="php/Starter.php"  style="width: 100%;" contact-form>
+							<input type="text" placeholder="Full Name*" required class="custom-input">
+							<input type="tel" placeholder="Phone*" required class="custom-input">
+							<input type="email" placeholder="Email*" required class="custom-input">
+							<button type="submit" class="custom-button">SUBMIT &rarr;</button>
+						</form>
+					</div>
+				</div>
+
+
+                <div class="container pad-top-xs">
 					<div class="border-top"></div>
 					<div class="row mar-bottom-md">
 						<div class="col-xs-12 pad-top-lg">
@@ -451,7 +466,7 @@
 								<form action="#" class="email-form">
 									<label for="email-input">9 AM - 5 PM, Monday - Saturday</label>
 									<label for="email-input">We are always ready to help you</label>
-									<a href="#" class="btn btn-green add" id="getStarted">Launch my company</a>
+									<button class="trigger-modal custom-button" style="width: 170px;">Launch My Company</button>
 								</form>
 							</div>
 						</div>
@@ -487,8 +502,10 @@
 			});
 		});
 	</script>
+	<script src="form.js"></script>
 	<script src="js/jquery.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/jquery.main.js"></script>
+	<script src="js/pop-up.js"></script>
 </body>
 </html>
