@@ -255,7 +255,7 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<!-- Page logo -->
-								<div class="logo pull-left"><a href="index.html">Express</a></div>
+								<div class="logo pull-left"><a href="index.html"><img src="./images/express-register-Logo.png" alt="" style="max-width: 40%;"></a></div>
 								<div class="holder pull-right">
 									<a href="#" class="pe-7s-menu menu-opener opener pull-right visible-xs"></a>
 									<div class="cart-holder pull-right">
@@ -1081,7 +1081,7 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-3 mar-bottom-xs">
 							<!-- logo -->
-							<div class="logo"><a href="#">Express Register</a></div>
+							<div class="logo"><a href="index.html"><img src="./images/express-register-Logo.png" alt="" style="max-width: 80%;"></a></div>
 							<!-- social -->
 							<ul class="list-inline social pad-top-xs">
 								<li><a href="#">
@@ -1152,112 +1152,12 @@
 	<!-- Back Top of the page -->
 	<span id="back-top" class="pe-7s-angle-up main-bg-color"></span>
 	</div><!-- end of main page wrapper -->
-
-	<script>
-		document.querySelectorAll('.faq-question').forEach(question => {
-			question.addEventListener('click', () => {
-				question.classList.toggle('active');
-				const answer = question.nextElementSibling;
-				if (answer.style.display === 'block') {
-					answer.style.display = 'none';
-				} else {
-					answer.style.display = 'block';
-				}
-			});
-		});
-	</script>
-	<script>
-		function myFunction() {
-			const element = document.getElementById("price01");
-			element.scrollIntoView();
-		}
-		function myBlog() {
-			const element = document.getElementById("blog01");
-			element.scrollIntoView();
-		}
-	</script>
-	<script>
-		const modal = document.getElementById("formModal");
-		const btns = document.querySelectorAll(".btn-green.add");
-		const span = document.getElementsByClassName("close")[0];
-		const form = document.getElementById("launchForm");
-
-		btns.forEach(btn => {
-			btn.onclick = function (e) {
-				e.preventDefault();
-				modal.style.display = "block";
-			}
-		});
-
-		span.onclick = function () {
-			modal.style.display = "none";
-		}
-
-		window.onclick = function (event) {
-			if (event.target == modal) {
-				modal.style.display = "none";
-			}
-		}
-
-		form.onsubmit = function (e) {
-			e.preventDefault();
-			alert("Form submitted! We'll be in touch soon.");
-			modal.style.display = "none";
-		}
-	</script>
-	<script>
-		$(function () {
-
-			// Get the form.
-			var form = $('#contact-form');
-
-			// Get the messages div.
-			var formMessages = $('.form-messege');
-
-			// Set up an event listener for the contact form.
-			$(form).submit(function (e) {
-				// Stop the browser from submitting the form.
-				e.preventDefault();
-
-				// Serialize the form data.
-				var formData = $(form).serialize();
-
-				// Submit the form using AJAX.
-				$.ajax({
-					type: 'POST',
-					url: $(form).attr('action'),
-					data: formData
-				})
-					.done(function (response) {
-						// Make sure that the formMessages div has the 'success' class.
-						$(formMessages).removeClass('error');
-						$(formMessages).addClass('success');
-
-						// Set the message text.
-						$(formMessages).text(response);
-
-						// Clear the form.
-						$('#contact-form input,#contact-form textarea').val('');
-					})
-					.fail(function (data) {
-						// Make sure that the formMessages div has the 'error' class.
-						$(formMessages).removeClass('success');
-						$(formMessages).addClass('error');
-
-						// Set the message text.
-						if (data.responseText !== '') {
-							$(formMessages).text(data.responseText);
-						} else {
-							$(formMessages).text('Oops! An error occured and your message could not be sent.');
-						}
-					});
-			});
-
-		});
+		
 	</script>
 	<script src="js/jquery.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/jquery.main.js"></script>
+	<script src="js/pop-up.js"></script>
 </body>
 
 </html>
