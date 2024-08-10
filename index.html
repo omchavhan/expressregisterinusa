@@ -36,6 +36,7 @@
 </head>
 
 <body>
+	<!-- faq-answer -->
 	<style>
 		h1 {
 			color: #333;
@@ -160,13 +161,7 @@
 		}
 	</style>
 	<style>
-		.btn {
-			display: inline-block;
-			padding: 10px 20px;
-			text-decoration: none;
-			border-radius: 5px;
-			font-weight: bold;
-		}
+		
 
 		.btn-green {
 			background-color: #2ecc71;
@@ -181,7 +176,7 @@
 			top: 0;
 			width: 100%;
 			height: 100%;
-			background-color: rgba(0, 0, 0, 0.4);
+			/* background-color: rgba(0, 0, 0, 0.4); */
 		}
 
 		.modal-content {
@@ -201,7 +196,7 @@
 			cursor: pointer;
 		}
 
-		
+
 
 		input {
 			width: 100%;
@@ -215,7 +210,7 @@
 		button[type="Submit"] {
 			width: 50%;
 			padding: 0.5rem;
-			background-color: #f39c12;
+			background-color: #2ecc71;
 			color: black;
 			border: none;
 			border-radius: 30px;
@@ -224,7 +219,7 @@
 		}
 
 		button[type="submit"]:hover {
-			background-color: #e67e22;
+			background-color: #2ecc71;
 		}
 
 		@media (max-width: 768px) {
@@ -233,10 +228,41 @@
 				margin: 10% auto;
 			}
 
-			
+
 
 			button[type="submit"] {
 				font-size: 1rem;
+			}
+		}
+	</style>
+
+	<style>
+		@media (max-width: 768px) {
+			.promo-box .btn {
+				margin-top: 10px;
+			}
+
+			.promo-box .txt {
+				font-size: 18px;
+			}
+
+			.promo-box .heading {
+				font-size: 16px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.promo-box {
+				padding: 20px 10px;
+			}
+
+			.promo-box .txt {
+				font-size: 16px;
+			}
+
+			.promo-box .btn {
+				width: 100%;
+				margin-bottom: 10px;
 			}
 		}
 	</style>
@@ -255,12 +281,14 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<!-- Page logo -->
-								<div class="logo pull-left"><a href="index.html"><img src="./images/express-register-Logo.png" alt="" style="max-width: 40%;"></a></div>
+								<div class="logo pull-left"><a href="index.html"><img
+											src="./images/express-register-Logo.png" alt="" style="max-width: 40%;"></a>
+								</div>
 								<div class="holder pull-right">
 									<a href="#" class="pe-7s-menu menu-opener opener pull-right visible-xs"></a>
 									<div class="cart-holder pull-right">
 
-										
+
 									</div>
 
 									<!-- start of page navigation -->
@@ -564,18 +592,18 @@
 									</div>
 
 									<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
-
-										<div class="holder">
-											<a class="btn btn-green" href="tel:+917972538966"> <span
-													class="heading">Call Now</span></a>
-
+										<div class="holder text-center">
+											<a class="btn btn-green btn-block" href="tel:+917972538966">
+												<span class="heading">Call Now</span>
+											</a>
 										</div>
 									</div>
 									<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
-										<div class="holder">
-											<a class="btn btn-green"
-												href="https://api.whatsapp.com/send?phone=917972538966&text=Hii"><span
-													class="heading">Whatsapp Now</span></a>
+										<div class="holder text-center">
+											<a class="btn btn-green btn-block"
+												href="https://api.whatsapp.com/send?phone=917972538966&text=Hii">
+												<span class="heading">Whatsapp Now</span>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -589,7 +617,6 @@
 					<div class="img-box bg-img-full right" style="background-image: url(images/man-standing.jpg);">
 					</div>
 				</section>
-
 
 				<main id="main">
 
@@ -668,36 +695,48 @@
 										<a href="Merchant-Account.html">read more</a>
 									</div>
 								</div><!-- end of icon-box -->
-								<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
+								<div class="row mar-bottom-sm">
+									<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
+										<div class="holder text-center">
+											<a class="btn btn-green btn-block" href="tel:+917972538966">
+												<span class="heading">Call Now</span>
+											</a>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
+										<div class="holder text-center">
+											<a class="btn btn-green btn-block"
+												href="https://api.whatsapp.com/send?phone=917972538966&text=Hii">
+												<span class="heading">Whatsapp Now</span>
+											</a>
+										</div>
+									</div>
+								</div>
 
-									<div class="holder">
-										<a class="btn btn-green" href="tel:+917972538966"> <span class="heading">Call
-												Now</span></a>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
-									<div class="holder">
-										<a class="btn btn-green"
-											href="https://api.whatsapp.com/send?phone=917972538966&text=Hii"><span
-												class="heading">Whatsapp Now</span></a>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
 
 		</div>
 
+
 		<div class="main-bg-color text-center promo-box">
 			<div class="container pad-top-md pad-bottom-md">
 				<div class="row">
 					<div class="col-xs-12">
 						<span class="txt">Get <strong>Counselling</strong> Now</span>
-						<a class="btn btn-green" href="tel:+917972538966" style="background-color: #282828;"> <span
-								class="heading">Call
-								Now</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<a class="btn btn-green" href="https://api.whatsapp.com/send?phone=917972538966&text=Hii"
-							style="background-color: #282828;"><span class="heading">Whatsapp Now</span></a>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<a class="btn btn-green btn-block" href="tel:+917972538966" style="background-color: #282828;">
+							<span class="heading">Call Now</span>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<a class="btn btn-green btn-block"
+							href="https://api.whatsapp.com/send?phone=917972538966&text=Hii"
+							style="background-color: #282828;">
+							<span class="heading">Whatsapp Now</span>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -801,7 +840,8 @@
 									<span class="close">&times;</span>
 									<h1 style="size: 20px;"> <strong>LAUNCH YOUR COMPANY</strong></h1>
 									<p>Fill out the form below, and we will be in touch shortly.</p>
-									<form id="launchForm contact-form" method="post" action="php/Starter.php" contact-form>
+									<form id="launchForm contact-form" method="post" action="php/Starter.php"
+										contact-form>
 										<input type="text" placeholder="Full Name*" required>
 										<input type="tel" placeholder="Phone*" required>
 										<input type="email" placeholder="Email*" required>
@@ -1075,26 +1115,27 @@
 
 		</main><!-- end of page main section -->
 		<!-- start of page footer -->
-		<footer id="footer">
+		<footer id="footer" class="footer">
 			<div class="bg-dark2 pad-top-lg pad-bottom-xs">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-12 col-sm-3 mar-bottom-xs">
-							<!-- logo -->
-							<div class="logo"><a href="index.html"><img src="./images/express-register-Logo.png" alt="" style="max-width: 80%;"></a></div>
-							<!-- social -->
+						<div class="col-xs-12 col-sm-6 col-md-3 mar-bottom-xs">
+							<div class="logo">
+								<a href="index.html">
+									<img src="./images/express-register-Logo.png" alt="" style="max-width: 80%;">
+								</a>
+							</div>
 							<ul class="list-inline social pad-top-xs">
 								<li><a href="#">
-										<p style="text-align: left;">Contact: expressregisterinusa@gmail.com</p>
+										<p>Contact: expressregisterinusa@gmail.com</p>
 									</a></li>
 								<li><a href="#">
-										<p style="text-align: left;">Registered Office Address: 4329 Dark Star Ln, Dallas, TX 75211</p>
+										<p>Registered Office Address: 4329 Dark Star Ln, Dallas, TX 75211</p>
 									</a></li>
-
 							</ul>
 						</div>
-						<div class="col-xs-12 col-sm-3 mar-bottom-xs" style="left: 44px;">
-							<span class="title text-uppercase ">Qucik Search</span>
+						<div class="col-xs-12 col-sm-6 col-md-3 mar-bottom-xs">
+							<span class="title text-uppercase">Quick Search</span>
 							<ul class="list-unstyled">
 								<li><a href="about.html">About Us</a></li>
 								<li><a href="#">Services</a></li>
@@ -1103,10 +1144,8 @@
 								<li><a href="contact.html">Contact</a></li>
 							</ul>
 						</div>
-
-						<div class="col-xs-12 col-sm-3 mar-bottom-xs">
+						<div class="col-xs-12 col-sm-6 col-md-3 mar-bottom-xs">
 							<span class="title text-uppercase">Useful Links</span>
-							<!-- start of twitter-feed -->
 							<ul class="list-unstyled">
 								<li><a href="#">Privacy Policy</a></li>
 								<li><a href="#">Terms and Conditions</a></li>
@@ -1115,27 +1154,17 @@
 								<li><a href="FAQ.html">FAQ</a></li>
 							</ul>
 						</div>
-						<div class="col-xs-12 col-sm-3 mar-bottom-xs">
+						<div class="col-xs-12 col-sm-6 col-md-3 mar-bottom-xs">
 							<span class="title text-uppercase">Work Hours</span>
-
 							<form action="#" class="email-form">
 								<label for="email-input">9 AM - 5 PM, Monday - Saturday</label>
 								<label for="email-input">We are always ready to help you</label>
-								<div class="holder">
-
-
-
-								</div>
-
-								<a href="#" class="btn btn-green add" id="getStarted" style="box-sizing: 50px;">Launch
-									my company</a>
-
-							</form><!-- end of email-form -->
+								<a href="#" class="btn btn-green add" id="getStarted">Launch my company</a>
+							</form>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- start of f-bottom -->
 			<div class="bg-dark3 f-bottom">
 				<div class="container">
 					<div class="row">
@@ -1146,13 +1175,14 @@
 						</div>
 					</div>
 				</div>
-			</div><!-- end of f-bottom -->
-		</footer><!-- end of page footer -->
+			</div>
+		</footer>
+		<!-- end of page footer -->
 	</div>
 	<!-- Back Top of the page -->
 	<span id="back-top" class="pe-7s-angle-up main-bg-color"></span>
 	</div><!-- end of main page wrapper -->
-		
+
 	</script>
 	<script src="js/jquery.js"></script>
 	<script src="js/plugins.js"></script>
