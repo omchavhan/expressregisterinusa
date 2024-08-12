@@ -33,15 +33,11 @@
 	<link rel="stylesheet" href="css/responsive.css">
 	<!-- include the site stylesheet -->
 	<link rel="stylesheet" href="css/color.css">
+	<link rel="stylesheet" href="form.css">
 </head>
 
 <body>
-	<!-- faq-answer -->
 	<style>
-		h1 {
-			color: #333;
-		}
-
 		.general-questions {
 			margin-bottom: 20px;
 		}
@@ -161,7 +157,13 @@
 		}
 	</style>
 	<style>
-		
+		.btn {
+			display: inline-block;
+			padding: 10px 20px;
+			text-decoration: none;
+			border-radius: 5px;
+			font-weight: bold;
+		}
 
 		.btn-green {
 			background-color: #2ecc71;
@@ -176,7 +178,7 @@
 			top: 0;
 			width: 100%;
 			height: 100%;
-			/* background-color: rgba(0, 0, 0, 0.4); */
+			background-color: rgba(0, 0, 0, 0.4);
 		}
 
 		.modal-content {
@@ -210,7 +212,7 @@
 		button[type="Submit"] {
 			width: 50%;
 			padding: 0.5rem;
-			background-color: #2ecc71;
+			background-color: #f39c12;
 			color: black;
 			border: none;
 			border-radius: 30px;
@@ -219,7 +221,7 @@
 		}
 
 		button[type="submit"]:hover {
-			background-color: #2ecc71;
+			background-color: #e67e22;
 		}
 
 		@media (max-width: 768px) {
@@ -232,37 +234,6 @@
 
 			button[type="submit"] {
 				font-size: 1rem;
-			}
-		}
-	</style>
-
-	<style>
-		@media (max-width: 768px) {
-			.promo-box .btn {
-				margin-top: 10px;
-			}
-
-			.promo-box .txt {
-				font-size: 18px;
-			}
-
-			.promo-box .heading {
-				font-size: 16px;
-			}
-		}
-
-		@media (max-width: 480px) {
-			.promo-box {
-				padding: 20px 10px;
-			}
-
-			.promo-box .txt {
-				font-size: 16px;
-			}
-
-			.promo-box .btn {
-				width: 100%;
-				margin-bottom: 10px;
 			}
 		}
 	</style>
@@ -592,18 +563,18 @@
 									</div>
 
 									<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
-										<div class="holder text-center">
-											<a class="btn btn-green btn-block" href="tel:+917972538966">
-												<span class="heading">Call Now</span>
-											</a>
+
+										<div class="holder">
+											<a class="btn btn-green" href="tel:+917972538966"> <span
+													class="heading">Call Now</span></a>
+
 										</div>
 									</div>
 									<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
-										<div class="holder text-center">
-											<a class="btn btn-green btn-block"
-												href="https://api.whatsapp.com/send?phone=917972538966&text=Hii">
-												<span class="heading">Whatsapp Now</span>
-											</a>
+										<div class="holder">
+											<a class="btn btn-green"
+												href="https://api.whatsapp.com/send?phone=917972538966&text=Hii"><span
+													class="heading">Whatsapp Now</span></a>
 										</div>
 									</div>
 								</div>
@@ -617,6 +588,7 @@
 					<div class="img-box bg-img-full right" style="background-image: url(images/man-standing.jpg);">
 					</div>
 				</section>
+
 
 				<main id="main">
 
@@ -695,30 +667,56 @@
 										<a href="Merchant-Account.html">read more</a>
 									</div>
 								</div><!-- end of icon-box -->
-								<div class="row mar-bottom-sm">
-									<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
-										<div class="holder text-center">
-											<a class="btn btn-green btn-block" href="tel:+917972538966">
-												<span class="heading">Call Now</span>
-											</a>
-										</div>
-									</div>
-									<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
-										<div class="holder text-center">
-											<a class="btn btn-green btn-block"
-												href="https://api.whatsapp.com/send?phone=917972538966&text=Hii">
-												<span class="heading">Whatsapp Now</span>
-											</a>
-										</div>
+								<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
+
+									<div class="holder">
+										<a class="btn btn-green" href="tel:+917972538966"> <span class="heading">Call
+												Now</span></a>
 									</div>
 								</div>
-
+								<div class="col-xs-12 col-sm-6 mar-bottom-xs icon-box small">
+									<div class="holder">
+										<a class="btn btn-green"
+											href="https://api.whatsapp.com/send?phone=917972538966&text=Hii"><span
+												class="heading">Whatsapp Now</span></a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 
 		</div>
 
+		<style>
+			@media (max-width: 768px) {
+				.promo-box .btn {
+					margin-top: 10px;
+				}
+
+				.promo-box .txt {
+					font-size: 18px;
+				}
+
+				.promo-box .heading {
+					font-size: 16px;
+				}
+			}
+
+			@media (max-width: 480px) {
+				.promo-box {
+					padding: 20px 10px;
+				}
+
+				.promo-box .txt {
+					font-size: 16px;
+				}
+
+				.promo-box .btn {
+					width: 100%;
+					margin-bottom: 10px;
+				}
+			}
+		</style>
 
 		<div class="main-bg-color text-center promo-box">
 			<div class="container pad-top-md pad-bottom-md">
@@ -805,6 +803,25 @@
 					</div>
 				</header><!-- end of main-heading -->
 				<div class="row pad-top-md text-center">
+					<div id="companyLaunchModal" class="custom-modal">
+						<div class="custom-modal-content">
+							<span class="custom-close">&times;</span>
+							<h1 style="font-size: 18px;"><strong>LAUNCH YOUR COMPANY</strong></h1>
+							<p>Fill out the form below, and we will be in touch shortly.</p>
+							<form id="companyLaunchForm" style="width: 100%;">
+								<input type="text" placeholder="Full Name*" required class="custom-input">
+								<input type="tel" placeholder="Phone*" required class="custom-input">
+								<input type="email" placeholder="Email*" required class="custom-input">
+								<button type="submit" class="custom-button">SUBMIT &rarr;</button>
+							</form>
+						</div>
+					</div>
+
+
+
+
+
+
 					<div class="col-xs-12">
 						<!-- start of price-box -->
 						<div class="price-box mar-bottom-xs">
@@ -833,22 +850,9 @@
 								<li><span class="pe-7s-check"></span></li>
 								<li>&nbsp;&nbsp;</li>
 							</ul>
-							<a href="#" class="btn btn-green add" id="getStarted">Get Started</a>
+							<button class="trigger-modal custom-button">get Started</button>
 							<!-- Start of modal -->
-							<div id="formModal" class="modal">
-								<div class="modal-content">
-									<span class="close">&times;</span>
-									<h1 style="size: 20px;"> <strong>LAUNCH YOUR COMPANY</strong></h1>
-									<p>Fill out the form below, and we will be in touch shortly.</p>
-									<form id="launchForm contact-form" method="post" action="php/Starter.php" contact-form>
-										<input type="text" placeholder="Full Name*" required>
-										<input type="tel" placeholder="Phone*" required>
-										<input type="email" placeholder="Email*" required>
-										<button type="submit">SUBMIT →</button>
-									</form>
-								</div>
-							</div>
-							<!-- End of modal -->
+							
 						</div><!-- end of price-box -->
 						<!-- start of price-box -->
 						<div class="price-box mar-bottom-xs active">
@@ -883,7 +887,7 @@
 								<li><span class="pe-7s-check"></span></li>
 
 							</ul>
-							<a href="#" class="btn btn-green add" id="getStarted">Get Started</a>
+							<button class="trigger-modal custom-button">get Started</button>
 						</div><!-- end of price-box -->
 
 						<!-- start of price-box -->
@@ -922,7 +926,7 @@
 									Card&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								</li>
 							</ul>
-							<a href="#" class="btn btn-green add" id="getStarted">Get Started</a>
+							<button class="trigger-modal custom-button">get Started</button>
 						</div><!-- end of price-box -->
 					</div>
 				</div>
@@ -981,15 +985,15 @@
 				<div class="col-xs-12 col-sm-4 mar-bottom-xs">
 					<!-- start of post -->
 					<div class="post">
-						<a href=""><img src="images/RegistedAgentinLLC.jpg" alt="image"
+						<a href="blog-detail.html"><img src="images/RegistedAgentinLLC.jpg" alt="image"
 								class="img-responsive"></a>
 						<div class="box bg-grey">
-							<h3 class="heading"><a href="">What is Registered Agent in LLC</a></h3>
+							<h3 class="heading"><a href="blog-detail.html">What is Registered Agent in LLC</a></h3>
 							<!-- <span class="meta">Web design &nbsp;/&nbsp; 26 Jan, 2017</span> -->
 							<p>Registered agent services are a great way to get help with important business tasks....
 								<br><br>
 							</p>
-							<a href="" class="more">More <i class="fa fa-angle-double-right"
+							<a href="blog-detail.html" class="more">More <i class="fa fa-angle-double-right"
 									aria-hidden="true"></i></a>
 						</div>
 					</div><!-- end of post -->
@@ -997,15 +1001,15 @@
 				<div class="col-xs-12 col-sm-4 mar-bottom-xs">
 					<!-- start of post -->
 					<div class="post">
-						<a href=""><img src="images/Indian-can-Register-Company.jpg" alt="image"
+						<a href="blog-detail.html"><img src="images/Indian-can-Register-Company.jpg" alt="image"
 								class="img-responsive"></a>
 						<div class="box bg-grey">
-							<h3 class="heading"><a href="">Can an indian Register a company in USA?</a>
+							<h3 class="heading"><a href="blog-detail.html">Can an indian Register a company in USA?</a>
 							</h3>
 							<!-- <span class="meta">UX &nbsp;/&nbsp; 14 Feb, 2017</span> -->
 							<p>Yes, an Indian can register a company in the United States. The process is
 								straightforward ...</p>
-							<a href="" class="more">More <i class="fa fa-angle-double-right"
+							<a href="blog-detail.html" class="more">More <i class="fa fa-angle-double-right"
 									aria-hidden="true"></i></a>
 						</div>
 					</div><!-- end of post -->
@@ -1013,13 +1017,13 @@
 				<div class="col-xs-12 col-sm-4 mar-bottom-xs">
 					<!-- start of post -->
 					<div class="post">
-						<a href=""><img src="images/EIN.jpg" alt="image" class="img-responsive"></a>
+						<a href="blog-detail.html"><img src="images/EIN.jpg" alt="image" class="img-responsive"></a>
 						<div class="box bg-grey">
-							<h3 class="heading"><a href="">What is a EIN Number used for?</a></h3>
+							<h3 class="heading"><a href="blog-detail.html">What is a EIN Number used for?</a></h3>
 							<span class="meta">Digital &nbsp;/&nbsp; 12 Mar, 2017</span>
 							<p>An Ein Number can be used for a variety of purposes, such as filing taxes and applying
 								for financial services...</p>
-							<a href="" class="more">More <i class="fa fa-angle-double-right"
+							<a href="blog-detail.html" class="more">More <i class="fa fa-angle-double-right"
 									aria-hidden="true"></i></a>
 						</div>
 					</div><!-- end of post -->
@@ -1156,9 +1160,9 @@
 						<div class="col-xs-12 col-sm-6 col-md-3 mar-bottom-xs">
 							<span class="title text-uppercase">Work Hours</span>
 							<form action="#" class="email-form">
-								<label for="email-input">9 AM - 5 PM, Monday - Saturday</label>
+								<label for="email-input">9 AM - 5 PM, Monday - Saturday</label> 
 								<label for="email-input">We are always ready to help you</label>
-								<a href="#" class="btn btn-green add" id="getStarted">Launch my company</a>
+								<button class="trigger-modal custom-button" style="width: 170px;">Launch My Company</button>
 							</form>
 						</div>
 					</div>
@@ -1183,10 +1187,12 @@
 	</div><!-- end of main page wrapper -->
 
 	</script>
+	<script src="form.js"></script>
 	<script src="js/jquery.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/jquery.main.js"></script>
 	<script src="js/pop-up.js"></script>
+	<script></script>
 </body>
 
 </html>
